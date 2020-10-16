@@ -277,12 +277,14 @@ function QuestionChangedLoop() {
                                         }
                                     } else {
                                         //("<p>"+Fix(Choices[1].children[0].children[0].children[0].children[0].children[0].innerHTML)+"</p>") == Fix(GetAnswer(GetQuestion(GetSetData())))
-                                        if (Fix(Choice.innerHTML) == Answer) {
-                                            Choice.innerHTML = "<correct-answer-x3Ca8B><u>" + Choice.innerHTML + "</u></correct-answer-x3Ca8B>"
-                                        }else if (("<p>"+Fix(Choice.children[0].innerHTML)+"</p>") == Fix(Answer)){
+                                        if (Fix(Choice.innerHTML) == Fix(Answer)) {
                                             Choice.innerHTML = "<correct-answer-x3Ca8B><u>" + Choice.innerHTML + "</u></correct-answer-x3Ca8B>"
                                         }else if (Choice.style.backgroundImage.slice(5, Choice.style.backgroundImage.length - 2).slice(0, Choice.style.backgroundImage.slice(5, Choice.style.backgroundImage.length - 2).search("/?w=") - 1) == GetAnswer(GetQuestion(GetSetData()))) {
                                             Choice.innerHTML = "<correct-answer-x3Ca8B><u>Correct Answer</u></correct-answer-x3Ca8B>"
+                                        }else if (Choice.children[0] != null){
+                                            if (("<p>"+Fix(Choice.children[0].innerHTML)+"</p>") == Fix(Answer)){
+                                                Choice.innerHTML = "<correct-answer-x3Ca8B><u>" + Choice.innerHTML + "</u></correct-answer-x3Ca8B>"
+                                            }
                                         }
                                     }
                                 }
