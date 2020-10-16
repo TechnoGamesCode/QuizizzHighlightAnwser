@@ -291,7 +291,7 @@ function QuestionChangedLoop() {
                             }
                         }
                     }
-                }, 5000)
+                }, 3000)
                 CurrentQuestionNum = NewNum.innerHTML
             }
         } else if (RedemptionQues) {
