@@ -1,0 +1,15 @@
+{
+"name":"Quizizz",
+"version":"4.2.0",
+"description":":)",
+"icons": { "16": "icon16x.png",
+    "48": "icon48x.png",
+   "128": "icon128x.png" },
+"permissions":[
+    "activeTab"
+],
+"manifest_version":2,
+"browser_action":{
+    "default_popup":"popup.html"
+}
+}

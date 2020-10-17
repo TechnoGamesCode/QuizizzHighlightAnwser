@@ -1,0 +1,69 @@
+body{
+    height: 350px;
+    width: 250px;
+}
+#icon{
+    background-image: url(icon.png);
+    height: 225px;
+    width: 225px;
+    align-content: center;
+    margin: auto;
+}
+#msg[target="error"]{
+	margin-top: 5px;
+	margin-left: 25px;
+	text-align: center;
+	font-family: "Comic Sans MS",Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #FF0000;
+    height: 30px;
+    width: 200px;
+    align-content: center;
+}
+#msg[target="success"]{
+	margin-top: 5px;
+	margin-left: 25px;
+	text-align: center;
+	font-family: "Comic Sans MS",Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #37FF37;
+    height: 30px;
+    width: 200px;
+    align-content: center;
+}
+#msg[target="null"]{
+}
+#text{
+    margin: auto;
+    text-align: center;
+    font-family: "Comic Sans MS",Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 50px;
+    width: 225px;
+}
+a:link, a:visited {
+    background-color: #72CD4D;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-self: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+a:hover, a:active {
+    background-color: #7AE450;
+}
+#href {
+	position: absolute;
+	bottom: 10px;
+    display: flex;
+    background-color: #37FF37;
+	justify-content: center;
+    align-items: center;
+	margin-top: 5px;
+	margin-left: 75px;
+    width: 100px;
+    height: 25px;
+  }
